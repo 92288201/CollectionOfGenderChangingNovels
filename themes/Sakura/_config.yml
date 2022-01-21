@@ -1,0 +1,110 @@
+# site name
+prefixName: 爱与正义的咸鱼少女团
+siteName: 伪-萌新驾到
+# favicon and site master avatar
+favicon: /img/HomepageAvatar.jpg
+avatar: /img/HomepageAvatar.jpg
+url: https://akabc23333.gitee.io/
+description: 变嫁是一种生活习惯
+cdn: https://cdn.jsdelivr.net/gh/adk23333/MyblogImages@main
+pjax: 1
+# 1开启
+mathjax: 0
+
+notice: 努力更新资源ing
+lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg
+
+menus:
+  首页: { path: /, fa: fa-fort-awesome faa-shake }
+  归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
+    小说资源: {path: /categories/小说资源/, fa: fa-cloud-download },
+    书单: {path: /categories/书单/, fa: fa-th-list faa-bounce }
+  } }
+  视觉: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: {  
+    番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
+    图集: {path: /tags/图集/, fa: fa-photo }
+  } }
+  留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
+  友人帐: { path: /links/, fa: fa-link faa-shake }
+  赞赏: { path: /donate/, fa: fa-heart faa-pulse }
+  关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
+    我？: {path: /about/, fa: fa-meetup}, 
+    主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
+    Lab: {path: /lab/, fa: fa-cogs },
+  } }
+
+
+# Home page sort type: -1: newer first，1: older first.
+homePageSortType: -1
+# Home page article shown number)
+homeArticleShown: 10
+# 背景图片 更好的修改
+bg:
+ - https://cdn.jsdelivr.net/gh/adk23333/MyblogImages@main/img/CrossroadsOfLife.webp
+
+# 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
+bgclass: filter-dot
+
+# startdash url, title, desc img
+startdash: 
+  - {url: https://docs.hojun.cn/sakura/docs/#/home?id=_2%E3%80%81%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE, title: Sakura, desc: 本站 hexo 主题, img: /img/sakura.md.png}
+  - {url: https://tieba.baidu.com/home/main?un=adk23333&id=tb.1.9f5a63a2.w1s__jfQF2ejxoCf1OCcmw?t=1533450011&fr=index, title: BaiduTieba, desc: 博主的贴吧个人主页, img: /img/BaiduGirl.jfif}
+  - {url: https://jq.qq.com/?_wv=1027&k=gXwoukxn, title: 爱与正义的咸鱼少女团, desc: 变嫁同好交流群, img: /img/QQ.jpg}
+
+
+
+# your site build time or founded date
+siteBuildingTime: 21/1/2022
+
+#social  url, img PC端配置
+social:
+  gitee: {url: https://gitee.com/akabc23333/akabc23333/, img: /img/GiteeLogo.jfif}
+  tieba: {url: https://tieba.baidu.com/home/main?un=adk23333&id=tb.1.9f5a63a2.w1s__jfQF2ejxoCf1OCcmw?t=1533450011&fr=index, img: /img/TiebaLogo.jfif}
+  qq: {url: https://qm.qq.com/cgi-bin/qm/ar?k=RAVlmFGLctgbOuBQVVByxt3FRhw5KSL&noverify=0, img: /img/QQlogo.jfif}
+
+#social  url, img 移动端配置
+msocial:
+  qq: {url: https://wpa.qq.com/msgrd?v=3&uin=2633103794&site=qq&menu=yes, fa: fa-qq, color: 25c6fe}
+
+donate:
+  paypal: https://raw.githubusercontent.com/adk23333/MyblogImages/main/img/miku.jpg
+  alipay: /img/miku.jpg
+  wechat: /img/miku.jpg
+  wechatSQ: /img/miku.jpg
+
+# 视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
+movies:
+  url: https://cdn.jsdelivr.net/gh/honjun/hojun@1.2
+  # 多个视频用逗号隔开，随机获取。支持的格式目前已知MP4,Flv。其他的可以试下，不保证有用
+  name: Unbroken.mp4
+
+aplayer: 
+  id: 2660651585
+  server: netease
+  type: playlist
+  fixed: true
+  autoplay: false
+  loop: all
+  order: random
+  preload: auto
+  volume: 0.7
+  mutex: true
+
+# Valine
+valine: true
+v_appId: jw7T7b7mW8xVxLWvGIQhfztb-gzGzoHsz
+v_appKey: F1CKL6PcOp1jOJzwoVp9qhAp
+v_verify: true 
+
+# Waline
+waline:
+  enable: true
+  serverURL: #服务端地址
+  visitor: false #统计阅读量
+  comment_count: true #统计评论数
+  avatar: mp # Gravatar style : mp/identicon/monsterid/wavatar/retro/hide
+  guest_info: nick #,mail,link # custom comment header
+  pageSize: 10
+  placeholder: 祝开开心心！ # Comment Box placeholder
+  requiredFields: [ 'nick','mail' ] #设置必填项
+  background: https://gitee.com/cungudafa/source/raw/master/img/gif/Sitich/Sitich2.gif #输入框提示动画
